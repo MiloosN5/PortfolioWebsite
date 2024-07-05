@@ -42,7 +42,7 @@ export const projects = [
                     'React - JS library',
                     'Components'
                 ],
-                details: `project/frontend-mentor/social-links-profile`
+                details: `/project/frontend-mentor/social-links-profile`
             },
             {
                 title: "Recipe Page",
@@ -88,7 +88,7 @@ export const projects = [
                     'Responsive layout',
                     'React - JS library'
                 ],
-                details: `project/frontend-mentor/base-apparel`
+                details: `/project/frontend-mentor/base-apparel`
             },
             {
                 title: "Four Card Feature",
@@ -110,7 +110,7 @@ export const projects = [
                     'Responsive layout',
                     'React - JS library'
                 ],
-                details: `project/frontend-mentor/four-card-feature`
+                details: `/project/frontend-mentor/four-card-feature`
             },
             {
                 title: "Article Preview",
@@ -132,7 +132,7 @@ export const projects = [
                     'Responsive layout',
                     'React - JS library'
                 ],
-                details: `project/frontend-mentor/article-preview`
+                details: `/project/frontend-mentor/article-preview`
             },
             {
                 title: "Social Proof",
@@ -153,7 +153,7 @@ export const projects = [
                     'Responsive layout',
                     'React'
                 ],
-                details: `project/frontend-mentor/social-proof`
+                details: `/project/frontend-mentor/social-proof`
             },
             {
                 title: "FAQ Accordion Card",
@@ -176,7 +176,7 @@ export const projects = [
                     'NPM',
                     'Webpack'
                 ],
-                details: `project/frontend-mentor/FAQ-accordion-card`
+                details: `/project/frontend-mentor/FAQ-accordion-card`
             },
             {
                 title: "Profile Card",
@@ -200,7 +200,7 @@ export const projects = [
                     'NPM',
                     'Webpack'
                 ],
-                details: `project/frontend-mentor/profile-card`
+                details: `/project/frontend-mentor/profile-card`
             },
             {
                 title: "3 Column Preview Card",
@@ -224,7 +224,7 @@ export const projects = [
                     'JavaScript',
                     'Webpack'
                 ],
-                details: `project/frontend-mentor/3-column-preview-card`
+                details: `/project/frontend-mentor/3-column-preview-card`
             },
             {
                 title: "Stats Preview Card",
@@ -248,7 +248,7 @@ export const projects = [
                     'JavaScript',
                     'Webpack'
                 ],
-                details: `project/frontend-mentor/stats-preview-card`
+                details: `/project/frontend-mentor/stats-preview-card`
             },
             {
                 title: "NFT Preview Card",
@@ -271,7 +271,7 @@ export const projects = [
                     'Gulp',
                     'JavaScript'
                 ],
-                details: `project/frontend-mentor/NFT-preview-card`
+                details: `/project/frontend-mentor/NFT-preview-card`
             },
             {
                 title: "Order Summary",
@@ -293,7 +293,7 @@ export const projects = [
                     'NPM',
                     'Parcel bundler'
                 ],
-                details: `project/frontend-mentor/order-summary`
+                details: `/project/frontend-mentor/order-summary`
             },
             {
                 title: "Interactive Rating",
@@ -314,7 +314,7 @@ export const projects = [
                     'Responsive layout',
                     'JavaScript - JavaScript'
                 ],
-                details: `project/frontend-mentor/interactive-rating`
+                details: `/project/frontend-mentor/interactive-rating`
             },
             {
                 title: "Product Preview Card",
@@ -335,7 +335,7 @@ export const projects = [
                     'Responsive layout',
                     'NPM'
                 ],
-                details: `project/frontend-mentor/product-preview-card`
+                details: `/project/frontend-mentor/product-preview-card`
             },
             {
                 title: "Results Summary",
@@ -358,7 +358,7 @@ export const projects = [
                     'JavaScript',
                     'JSON (using Fetch)'
                 ],
-                details: `project/frontend-mentor/results-summary`
+                details: `/project/frontend-mentor/results-summary`
             },
             {
                 title: "QR Code",
@@ -376,7 +376,7 @@ export const projects = [
                     'Mobile-first workflow',
                     'REM (Root EM)'
                 ],
-                details: `project/frontend-mentor/QR-code`
+                details: `/project/frontend-mentor/QR-code`
             },
         ]
     },
@@ -410,7 +410,7 @@ export const projects = [
                     'RESTful API / CRUD',
                     'Single Page Application (SPA) / routes'
                 ],
-                details: `project/my-work/my-rankings`
+                details: `/project/my-work/my-rankings`
             }
         ]
     }
