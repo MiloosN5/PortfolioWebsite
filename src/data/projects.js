@@ -66,7 +66,7 @@ export const projects = [
                     'Components',
                     'TypeScript'
                 ],
-                details: `project/frontend-mentor/recipe-page`
+                details: `/project/frontend-mentor/recipe-page`
             },
             {
                 title: "Base Apparel",
