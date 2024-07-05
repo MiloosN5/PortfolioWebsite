@@ -15,11 +15,11 @@ import ContactRoute from './routes/ContactRoute'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<PageLayout />}>
-      {/* <Route index element={<HomeRoute />} />
+      <Route index element={<HomeRoute />} />
       <Route path='projects' element={<ProjectsRoute />} />
       <Route path='project/:socialName/:projectName' element={<ProjectDetailRoute />} />
       <Route path='skills' element={<SkillsRoute />} />
-      <Route path='contact' element={<ContactRoute />} /> */}
+      <Route path='contact' element={<ContactRoute />} />
     </Route>
   )
 )
