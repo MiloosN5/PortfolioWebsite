@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/PortfolioWebsite/",
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        includePaths: ['./src/sass'], 
+      },
+    },
+  },
 })
