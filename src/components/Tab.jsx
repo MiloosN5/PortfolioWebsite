@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom'
 
 const Tab = ({ data, type }) => {
 
@@ -44,7 +45,7 @@ const Tab = ({ data, type }) => {
                                                 <article key={index} className='content--tab__project-preview'>
                                                     <h4 className='sr-only'>{project.title}</h4>
                                                     <img className='thumbnail' src={project.image} alt={`Preview image of ${project.title}`} />
-                                                    <a className='black-outline' href={project.details}>View Project</a>
+                                                    <NavLink className='black-outline' to={project.details}>View Project</NavLink>
                                                 </article>
                                             ))}
                                         </div>
