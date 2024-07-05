@@ -1,0 +1,62 @@
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+
+.content {
+    &--tab {
+        &__wrapper {
+            @include m.flexbox(
+                $direction: column, 
+                $mobile-direction: row, 
+                $gap: f.rem(20)
+            );
+            &>h4 {
+                @include m.flexbox(
+                    $direction: column, 
+                    $align-items: center
+                );
+                @include m.paddings(
+                    $padding-inline: f.rem(10), 
+                    $padding-block: f.rem(10)
+                );
+                @include m.vertical-text();
+                @include m.border($border: f.rem(1) solid black);
+                font-weight: 100;
+            }
+        }
+
+        &__content {
+            @include m.flexbox($direction: column);
+            @include m.margins($margin-inline: auto);
+        }
+
+        &__projects {
+            @include m.grid(
+                $template-cols: repeat(1, 1fr), 
+                $mobile-template-cols: repeat(2, 1fr), 
+                $desktop-template-cols: repeat(4, 1fr)
+            );
+        }
+
+        &__project-preview {
+            @include m.flexbox(
+                $direction: column, 
+                $align-items: center, 
+                $justify-content: center
+            );
+            @include m.text-align($align: center);
+
+            &:hover {
+                img {
+                    @include m.filter($filter: 'filter-dropShadow_sepia');
+                }
+            }
+
+            a {
+                font-weight: 800;
+                font-size: f.rem(16);
+                text-transform: uppercase;
+            }
+        }
+
+    }
+}

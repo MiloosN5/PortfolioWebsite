@@ -1,0 +1,11 @@
+@use '../helpers/functions' as f;
+@use '../helpers/mixins' as m;
+
+.tab {
+    &__wrapper {
+        @include m.flexbox(
+            $direction: column, 
+            $gap: f.rem(20)
+        );
+    }
+}

@@ -1,0 +1,40 @@
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+
+.accordion {
+    &-item {
+        &__content {
+            overflow: hidden;
+        }
+        &__title {
+            @include m.flexbox();
+            &.active {
+                button {
+                    @include m.button-outline();
+                }
+            }
+            button {
+                @include m.dimensions(
+                    $width: 100%,
+                    $height: 100%
+                );
+                text-transform: uppercase;
+            }
+        }
+        &__description {
+            @include m.transition($transition: 'transition-accordion');
+            &.inactive {
+                max-height: 0;
+            }
+            &.active {
+                max-height: f.rem(3000);
+            }
+        }
+        &__subitem {
+            @include m.paddings(
+                $padding-block: f.rem(20), 
+                $padding-inline: f.rem(20)
+            );
+        }
+    }
+}

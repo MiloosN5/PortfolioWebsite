@@ -1,0 +1,12 @@
+@use '../helpers/mixins' as m;
+
+ul {
+
+    li {
+        @include m.text-align($align: left);
+
+        span {
+            font-weight: 900;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@use '../../helpers/mixins' as m;
+@use '../../helpers/functions' as f;
+
+.hero-section {
+    &__wrapper {
+        @include m.flexbox(
+            $direction: column, 
+            $justify-content: center, 
+            $gap: f.rem(20)
+        );
+        @include m.paddings(
+            $padding-block: f.rem(10), 
+            $padding-inline: f.rem(10),
+            $mobile-padding-block: f.rem(20), 
+            $mobile-padding-inline: f.rem(20)
+        );
+        @include m.dimensions($width: 100%);
+
+        span:nth-of-type(1) {
+            @include m.font(
+                $font-family: 'ff-cursive', 
+                $font-size: f.rem(50), 
+                $font-weight: 100
+            );
+            @include m.text-align($align: center);
+        }
+
+        span:nth-of-type(2) {
+            @include m.font(
+                $font-family: 'ff-display', 
+                $font-size: f.rem(36), 
+            );
+            @include m.text-align($align: center);
+        }
+    }
+
+    &__main {
+        @include m.flexbox(
+            $direction: column, 
+            $justify-content: center
+        );
+    }
+
+    &__getToKnow {
+        @include m.flexbox(
+            $direction: column, 
+            $align-items: center, 
+            $justify-content: center, 
+            $gap: f.rem(10)
+        );
+        @include m.dimensions($max-width: f.rem(600));
+        @include m.margins($margin-inline: auto);
+
+        p {
+            @include m.text-align($align: center);
+        }
+
+        a {
+            &:hover {
+                @include m.anchor-black-filled();
+            }
+        }
+    }
+}

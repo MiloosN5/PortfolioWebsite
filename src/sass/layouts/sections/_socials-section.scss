@@ -1,0 +1,30 @@
+@use '../../helpers/mixins' as m;
+@use '../../helpers/functions' as f;
+
+.socials-section {
+    &--contact {
+        &__wrapper {
+            @include m.flexbox(
+                $direction: column, 
+                $gap: f.rem(20)
+            );
+            @include m.paddings(
+                $padding-block: f.rem(10), 
+                $padding-inline: f.rem(10),
+                $mobile-padding-block: f.rem(20), 
+                $mobile-padding-inline: f.rem(20)
+            );
+            @include m.dimensions($width: 100%);
+        }
+
+        &__content {
+            @include m.grid(
+                $template-cols: 1fr, 
+                $mobile-template-cols: repeat(2, 1fr), 
+                $desktop-template-cols: repeat(4, 1fr), 
+                $gap: f.rem(20)
+            );
+            @include m.text-align($align: center);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+
+.nav {
+    &--page {
+        &__wrapper {
+            @include m.flexbox($direction: column, $justify-content: center, $align-items: center, $desktop-direction: row);
+            @include m.overflow($overflow: hidden);
+        }
+        &__list {
+            @include m.flexbox($direction: column, $gap: f.rem(10), $desktop-direction: row);
+            @include m.transition();
+            @include m.visible($desktop-display: flex);
+            @include m.dimensions($max-height: f.rem(0), $desktop-max-height: f.rem(1000));
+            &.show {
+                @include m.dimensions($max-height: f.rem(1000));
+            }
+        }
+        &__hamburger {
+            @include m.paddings(
+                $padding-block: f.rem(10),
+                $padding-inline: f.rem(10)
+            );
+            @include m.flexbox();
+            @include m.hidden($desktop-display: none);
+        }
+    }
+}

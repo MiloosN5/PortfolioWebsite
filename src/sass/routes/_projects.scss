@@ -1,0 +1,7 @@
+@use '../helpers/mixins' as m;
+
+.projects {
+    &__wrapper {
+        @include m.section-route();
+    }
+}

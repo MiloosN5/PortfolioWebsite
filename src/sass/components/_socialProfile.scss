@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+@use '../helpers/variables' as v;
+
+.socialProfile {
+    @include m.grid(
+        $template-cols: 1fr, 
+        $template-rows: 140px 60px auto, 
+        $justify-items: center, 
+        $gap: f.rem(10)
+    );
+
+    img {
+
+        box-shadow: map.get(v.$shadow, 'boxShadow-black');
+    }
+
+    a {
+        text-decoration: underline;
+        word-break: break-all;
+        justify-content: start;
+
+        &:hover {
+            @include m.anchor-black-filled();
+        }
+    }
+
+}

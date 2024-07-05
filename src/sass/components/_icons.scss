@@ -1,0 +1,22 @@
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+
+.icon {
+    &--expand {
+        @include m.flexbox(
+            $direction: column, 
+            $align-items: center, 
+            $justify-content: center
+        );
+        @include m.paddings(
+            $padding-block: f.rem(10), 
+            $padding-inline: f.rem(20)
+        );
+        @include m.transition();
+        cursor: pointer;
+
+        &.active {
+            transform: rotate(-45deg);
+        }
+    }
+}

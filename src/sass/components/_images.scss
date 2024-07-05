@@ -1,0 +1,14 @@
+@use '../helpers/mixins' as m;
+
+.thumbnail {
+    @include m.dimensions(
+        $width: 80%, 
+        $height: 80%
+    );
+    object-fit: cover;
+}
+
+img {
+    @include m.transition();
+    transform: rotate(0deg);
+}

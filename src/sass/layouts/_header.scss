@@ -1,0 +1,18 @@
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+
+.header {
+    &--page {
+        &__wrapper {
+            @include m.flexbox(
+                $direction: column, 
+                $align-items: center, 
+                $justify-content: center
+            );
+            @include m.paddings(
+                $padding-block: f.rem(20),
+                $padding-inline: f.rem(20)
+            );
+        }
+    }
+}

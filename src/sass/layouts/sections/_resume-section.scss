@@ -1,0 +1,18 @@
+@use '../../helpers/mixins' as m;
+@use '../../helpers/functions' as f;
+
+.resume-section {
+    &__wrapper {
+        @include m.flexbox(
+            $direction: column, 
+            $gap: f.rem(20)
+        );
+        @include m.paddings(
+            $padding-block: f.rem(10), 
+            $padding-inline: f.rem(10),
+            $mobile-padding-block: f.rem(20), 
+            $mobile-padding-inline: f.rem(20)
+        );
+        @include m.dimensions($width: 100%);
+    }
+}

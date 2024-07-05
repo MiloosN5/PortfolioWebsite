@@ -1,0 +1,34 @@
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+
+.page {
+    &__wrapper {
+        position: relative;
+        background-color: white;
+        color: black;
+        @include m.flexbox($direction: column);
+        @include m.dimensions($min-height: 100vh);
+        @include m.paddings(
+            $padding-block: f.rem(10), 
+            $padding-inline: f.rem(10),
+            $mobile-padding-block: f.rem(20),
+            $mobile-padding-inline: f.rem(20)
+        );
+        @include m.overflow(hidden);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            color: inherit;
+            background-color: rgb(225, 224, 224);
+            pointer-events: none;
+            mix-blend-mode: difference;
+            transform: rotate(-45deg) translate(-50%, -50%);
+            transform-origin: top left;
+        }
+    }
+}

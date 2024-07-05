@@ -1,0 +1,82 @@
+@use 'sass:map';
+@use './functions' as f;
+
+$breakpoints: (
+    'mobile': f.em(478),
+    'desktop': f.em(768)
+);
+
+$font: (
+    'ff-sansSerif-root': ('Quicksand', sans-serif),
+    'ff-serif': ('Abril Fatface', serif),
+    'ff-cursive': ('Oooh Baby', cursive),
+    'ff-display': ('Anton SC', sans-serif),
+    'fs-root--standard' : f.rem(18),
+    'fs-h2': f.rem(36),
+    'fs-h3': f.rem(36),
+    'fs-h4': f.rem(26),
+    'fs-h5': f.rem(22),
+    'fs-h6': f.rem(22),
+    'fw-root': 600,
+    'lh-root': 1.5,
+    'ls-root': 0
+);
+
+$align: (
+
+);
+
+$grid: (
+
+);
+
+$flex: (
+
+);
+
+$width: (
+
+);
+
+$height: (
+
+);
+
+$padding: (
+
+);
+
+$border: (
+
+);
+
+$margin: (
+
+);
+
+$position: (
+
+);
+
+$transition: (
+    'transition-root': 0.5s ease-in-out,
+    'transition-accordion': 1s ease-in-out
+);
+
+$overflow: (
+    
+);
+
+$visibleStatus: (
+    
+);
+
+$shadow: (
+    'boxShadow-black': (rgba(0, 0, 0, 0.4) f.rem(0) f.rem(2) f.rem(4), rgba(0, 0, 0, 0.3) f.rem(0) f.rem(7) f.rem(13) f.rem(-3), rgba(0, 0, 0, 0.2) f.rem(0) f.rem(-3) f.rem(0) inset),
+    'boxShadow-white': (rgba(255, 255, 255, 0.4) f.rem(0) f.rem(2) f.rem(4), rgba(255, 255, 2550, 0.3) f.rem(0) f.rem(7) f.rem(13) f.rem(-3), rgba(255, 255, 255, 0.2) f.rem(0) f.rem(-3) f.rem(0) inset)
+);
+
+$filter: (
+    'filter-dropShadow_sepia': (drop-shadow(f.rem(4) f.rem(4) f.rem(20) rgb(224, 199, 9)) sepia(80%))
+)
+

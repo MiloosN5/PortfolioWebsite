@@ -1,0 +1,66 @@
+@use 'sass:map';
+@use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
+@use '../helpers/variables' as v;
+
+.buttons {
+    &--tab {
+        &__wrapper {
+            @include m.flexbox(
+                $direction: column, 
+                $align-items: center, 
+                $justify-content: center
+            );
+        }
+        &__content {
+            @include m.flexbox(
+                $direction: column, 
+                $justify-content: center, 
+                $gap: f.rem(20), 
+                $mobile-direction: row
+            );
+            @include m.dimensions($width: 100%);
+        }
+    }
+}
+
+.button {
+    &--filled {
+        @include m.button-filled();
+    }
+    &--outline {
+        @include m.button-outline();
+        &.active {
+            @include m.button-filled();
+        }
+    }
+}
+
+a {
+    &.black-filled {
+        @include m.anchor-black-filled();
+    }
+    &.black-outline {
+        @include m.anchor-black-outline();
+    }
+    &.white-filled {
+        @include m.anchor-white-filled();
+    }
+    &.white-outline {
+        @include m.anchor-white-outline();
+    }
+    &.active {
+        @include m.anchor-black-filled();
+    }
+    &:active {
+        color: inherit;
+        opacity: 0.5;
+    }
+    &.black-boxShadow {
+        box-shadow: map.get(v.$shadow, 'boxShadow-black');
+    }
+
+    &.white-boxShadow {
+        box-shadow: map.get(v.$shadow, 'boxShadow-white');
+    }
+}
