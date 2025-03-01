@@ -1,14 +1,19 @@
 @use '../helpers/mixins' as m;
+@use '../helpers/functions' as f;
 
 .thumbnail {
     @include m.dimensions(
-        $width: 80%, 
-        $height: 80%
+        $width: f.rem(300), 
+        $height: f.rem(200),
+        $max-width: 90%,
+        $max-height: 90%
     );
+    object-position: top;
     object-fit: cover;
 }
 
 img {
     @include m.transition();
     transform: rotate(0deg);
+    
 }

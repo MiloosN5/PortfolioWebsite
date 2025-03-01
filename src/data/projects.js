@@ -15,6 +15,7 @@ import ProductPreviewCard from '../assets/thumbnail_frontendMentor_product_previ
 import ResultsSummary from '../assets/thumbnail_frontendMentor_results_summary.png'
 import QRCode from '../assets/thumbnail_frontendMentor_QR_code.png'
 import MyRankings from '../assets/thumbnail_mywork_myrankings.png'
+import Sporto from '../assets/thumbnail_mywork_sporto.png'
 
 export const projects = [
     {
@@ -397,20 +398,37 @@ export const projects = [
                 features: [
                     'Semantic HTML5 markup',
                     'SASS/SCSS',
+                    'React - JS library',
+                    'Express + Node.js (Backend / Server)',
+                    'Node.js (Runtime for Backend)',
+                    'MongoDB (Database)',
+                    'RESTful API / CRUD',
+                    'SPA (Single-page application)',
+                    'Reusable Code / Components',
                     'BEM',
                     'Flexbox/Grid',
                     'Mobile-first workflow',
-                    'REM (Root EM) & EM (for Responsive)',
-                    'Responsive layout',
-                    'React - JS library',
-                    'Components',
+                    'Responsiveness (Viewport size, REM / EM)',
                     'Axios',
-                    'Nodejs / Express (backend)',
-                    'MongoDB',
-                    'RESTful API / CRUD',
-                    'Single Page Application (SPA) / routes'
+                    'Accessibility',
+                    'Transitions',
+                    'Light / Dark Themes'
                 ],
                 details: `/project/my-work/my-rankings`
+            },
+            {
+                title: "Sporto",
+                slug: 'sporto',
+                description: "...",
+                image: `${Sporto}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/Sporto',
+                    live: 'https://sporto-frontend.onrender.com/'
+                },
+                features: [
+                    'Postgres',
+                ],
+                details: `/project/my-work/sporto`
             }
         ]
     }
