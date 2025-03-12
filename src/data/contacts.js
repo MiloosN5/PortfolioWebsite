@@ -1,7 +1,8 @@
-import GitHub from '../assets/my_github_logo.jpg'
-import FrontendMentor from '../assets/my_frontendmentor_logo.jpg'
-import Exercism from '../assets/my_exercism_logo.jpg'
-import LinkedIn from '../assets/my_linkedin_logo.jpg'
+import GitHub from '../assets/my_github_logo.png'
+import FrontendMentor from '../assets/my_frontendmentor_logo.png'
+import Exercism from '../assets/my_exercism_logo.png'
+import LinkedIn from '../assets/my_linkedin_logo.png'
+import LeetCode from '../assets/my_leetcode_logo.png'
 
 export const contacts = [
     {
@@ -27,5 +28,11 @@ export const contacts = [
         imgSrc: `${LinkedIn}`,
         imgAlt: 'Logo of LinkedIn',
         link: 'https://www.linkedin.com/in/milos-novakovic-1a9517263'
+    },
+    {
+        title: 'LeetCode',
+        imgSrc: `${LeetCode}`,
+        imgAlt: 'Logo of LeetCode',
+        link: 'https://www.leetcode.com/u/Miloos5/'
     }
 ]

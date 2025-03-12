@@ -16,6 +16,7 @@ import ResultsSummary from '../assets/thumbnail_frontendMentor_results_summary.p
 import QRCode from '../assets/thumbnail_frontendMentor_QR_code.png'
 import MyRankings from '../assets/thumbnail_mywork_myrankings.png'
 import Sporto from '../assets/thumbnail_mywork_sporto.png'
+import PyTaskManager from '../assets/thumbnail_mywork_pytaskmanager.png'
 
 export const projects = [
     {
@@ -429,6 +430,19 @@ export const projects = [
                     'Postgres',
                 ],
                 details: `/project/my-work/sporto`
+            },
+            {
+                title: 'PyTaskManager',
+                slug: 'py-task-manager',
+                description: '...',
+                image: `${PyTaskManager}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/PYTHON__001__PyTaskManager',
+                },
+                features: [
+                    'Python',
+                ],
+                details: `/project/my-work/py-task-manager`
             }
         ]
     }

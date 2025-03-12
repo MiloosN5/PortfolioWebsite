@@ -12,8 +12,10 @@
     );
 
     img {
-
+        object-fit: contain;
+        object-position: center;
         box-shadow: map.get(v.$shadow, 'boxShadow-black');
+        background-color: white;
     }
 
     a {
