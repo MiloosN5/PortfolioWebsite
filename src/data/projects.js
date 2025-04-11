@@ -17,6 +17,7 @@ import QRCode from '../assets/thumbnail_frontendMentor_QR_code.png'
 import MyRankings from '../assets/thumbnail_mywork_myrankings.png'
 import Sporto from '../assets/thumbnail_mywork_sporto.png'
 import PyTaskManager from '../assets/thumbnail_mywork_pytaskmanager.png'
+import MiniECommerce from '../assets/thumbnail_mywork_miniecommerce.png'
 
 export const projects = [
     {
@@ -397,21 +398,19 @@ export const projects = [
                     live: 'https://myrankings-frontend.onrender.com/'
                 },
                 features: [
-                    'Semantic HTML5 markup',
-                    'SASS/SCSS',
-                    'React - JS library',
-                    'Express + Node.js (Backend / Server)',
-                    'Node.js (Runtime for Backend)',
-                    'MongoDB (Database)',
+                    'React',
+                    'Express + Node.js',
+                    'MongoDB',
+                    'SASS/SCSS + BEM',
+                    'Flexbox/Grid',
                     'RESTful API / CRUD',
                     'SPA (Single-page application)',
-                    'Reusable Code / Components',
-                    'BEM',
-                    'Flexbox/Grid',
                     'Mobile-first workflow',
-                    'Responsiveness (Viewport size, REM / EM)',
-                    'Axios',
+                    'Semantic HTML5 markup',
+                    'Reusable Code / Components',
                     'Accessibility',
+                    'Responsiveness (Viewport size, REM / EM)',
+                    'Fetching with JSON + Axios',
                     'Transitions',
                     'Light / Dark Themes'
                 ],
@@ -427,7 +426,25 @@ export const projects = [
                     live: 'https://sporto-frontend.onrender.com/'
                 },
                 features: [
-                    'Postgres',
+                    'Express + Node.js',
+                    'React',
+                    'TypeScript',
+                    'PostgreSQL',
+                    'SASS/SCSS + BEM',
+                    'Flexbox/Grid',
+                    'RESTful API + CRUD',
+                    'MVC',
+                    'SPA (Single-page application)',
+                    'Mobile-first workflow',
+                    'Semantic HTML5 markup',
+                    'Reusable Code / Components',
+                    'Accessibility',
+                    'Responsiveness (Viewport size, REM / EM)',
+                    'Transitions',
+                    'Fetching with JSON + Axios',
+                    'Login/Signup system',
+                    'Nodemailer',
+                    'Carousel/slider'
                 ],
                 details: `/project/my-work/sporto`
             },
@@ -440,9 +457,41 @@ export const projects = [
                     code: 'https://github.com/MiloosN5/PYTHON__001__PyTaskManager',
                 },
                 features: [
-                    'Python',
+                    'Python'
                 ],
                 details: `/project/my-work/py-task-manager`
+            },
+            {
+                title: 'Mini E-Commerce',
+                slug: 'mini-e-commerce',
+                description: '...',
+                image: `${MiniECommerce}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/Mini_ECommerce__PRL',
+                },
+                features: [
+                    'Laravel / PHP',
+                    'React',
+                    'PostgreSQL + Eloquent ORM',
+                    'TypeScript',
+                    'Redux',
+                    'SASS/SCSS + BEM',
+                    'SPA',
+                    'MVC',
+                    'RESTful API + CRUD',
+                    'Mobile-first workflow',
+                    'Semantic HTML5 markup',
+                    'Reusable Code / Components',
+                    'Accessibility',
+                    'Responsiveness (Viewport size, REM / EM)',
+                    'Transitions',
+                    'Fetching with JSON + Axios',
+                    'Login/Signup system + Laravel Sanctum',
+                    'Cart + Products',
+                    'CORS'
+                
+                ],
+                details: `/project/my-work/mini-e-commerce`
             }
         ]
     }
