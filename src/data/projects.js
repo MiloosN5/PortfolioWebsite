@@ -467,7 +467,7 @@ export const projects = [
                 description: '...',
                 image: `${MiniECommerce}`,
                 link: {
-                    code: 'https://github.com/MiloosN5/Mini_ECommerce__PRL',
+                    code: 'https://github.com/MiloosN5/MiniECommerce__PRL',
                 },
                 features: [
                     'Laravel / PHP',
