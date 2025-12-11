@@ -17,6 +17,10 @@ import QRCode from '../assets/thumbnail_frontendMentor_QR_code.png'
 import MyRankings from '../assets/thumbnail_mywork_myrankings.png'
 import Sporto from '../assets/thumbnail_mywork_sporto.png'
 import PyTaskManager from '../assets/thumbnail_mywork_pytaskmanager.png'
+import TubeDownloaderGUI from '../assets/thumbnail_mywork_tubedownloadergui.png'
+import PasswordStrengthAnalyzer from '../assets/thumbnail_mywork_passwordstrengthanalyzer.png'
+import AuthenticationSystem from '../assets/thumbnail_mywork_authenticationsystem.png'
+import APICommentViewer from '../assets/thumbnail_mywork_apicommentviewer.png'
 import MiniECommerce from '../assets/thumbnail_mywork_miniecommerce.png'
 import PersonalBookTracker from '../assets/thumbnail_mywork_personalbooktracker.png'
 
@@ -494,6 +498,58 @@ export const projects = [
                 ],
                 details: `/project/my-work/mini-e-commerce`
             },
+            {
+                title: 'TubeDownloaderGUI',
+                slug: 'tube-downloader-gui',
+                description: '...',
+                image: `${TubeDownloaderGUI}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/PYTHON__002__TubeDownloaderGUI',
+                },
+                features: [
+                    'Python'
+                ],
+                details: `/project/my-work/tube-downloader-gui`
+            },  
+            {
+                title: 'PasswordStrengthAnalyzer',
+                slug: 'password-strength-analyzer',
+                description: '...',
+                image: `${PasswordStrengthAnalyzer}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/PYTHON__003__PasswordStrengthAnalyzer',
+                },
+                features: [
+                    'Python'
+                ],
+                details: `/project/my-work/password-strength-analyzer`
+            },   
+            {
+                title: 'AuthenticationSystem',
+                slug: 'authentication-system',
+                description: '...',
+                image: `${AuthenticationSystem}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/PHP__001__AuthenticationSystem',
+                },
+                features: [
+                    'PHP'
+                ],
+                details: `/project/my-work/authentication-system`
+            },   
+            {
+                title: 'APICommentViewer',
+                slug: 'api-comment-viewer',
+                description: '...',
+                image: `${APICommentViewer}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/PYTHON__004__APICommentViewer',
+                },
+                features: [
+                    'Python'
+                ],
+                details: `/project/my-work/api-comment-viewer`
+            },                                               
             {
                 title: 'Personal Book Tracker',
                 slug: 'personal-book-tracker',
