@@ -18,6 +18,7 @@ import MyRankings from '../assets/thumbnail_mywork_myrankings.png'
 import Sporto from '../assets/thumbnail_mywork_sporto.png'
 import PyTaskManager from '../assets/thumbnail_mywork_pytaskmanager.png'
 import MiniECommerce from '../assets/thumbnail_mywork_miniecommerce.png'
+import PersonalBookTracker from '../assets/thumbnail_mywork_personalbooktracker.png'
 
 export const projects = [
     {
@@ -492,6 +493,32 @@ export const projects = [
                 
                 ],
                 details: `/project/my-work/mini-e-commerce`
+            },
+            {
+                title: 'Personal Book Tracker',
+                slug: 'personal-book-tracker',
+                description: '...',
+                image: `${PersonalBookTracker}`,
+                link: {
+                    code: 'https://github.com/MiloosN5/PersonalBookTracker__MGRP',
+                },
+                features: [
+                    'Python',
+                    'FastAPI',
+                    'Uvicorn',
+                    'CORS',
+                    'React',
+                    'TypeScript',
+                    'TanStack',
+                    'MongoDB',
+                    'GraphQL (Strawberry GraphQL)',
+                    'SASS/SCSS + BEM',
+                    'SPA',
+                    'Mobile-first workflow',
+                    'Semantic HTML5 markup',
+                    'Reusable Code / Components',
+                ],
+                details: `/project/my-work/personal-book-tracker`
             }
         ]
     }
