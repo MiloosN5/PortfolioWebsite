@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import StructuredData from '../components/StructuredData';
 
 const personSchema = {
   "@context": "https://schema.org",

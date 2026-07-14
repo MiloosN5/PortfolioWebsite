@@ -1,5 +1,6 @@
 import { projects } from '../data/projects'
 import Tab from '../components/Tab'
+import StructuredData from '../components/StructuredData';
 
 const breadcrumb = {
   "@context": "https://schema.org",
